@@ -1,0 +1,23 @@
+.block1{
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+.spansetings1{
+    color: red;
+    font-weight: bold ;
+}
+p{
+    text-indent: 30px;
+}
+h3{
+    text-align: center;
+    color: blue;
+}
+.spansetings2{
+    color: blue;
+    font-style: italic;
+}
