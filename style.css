@@ -1,0 +1,16 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+.list1{
+    margin: 40px;
+}
+.table1{
+    border: 1px solid black ;
+}
+.table1 td, .table1 th{
+    border: 1px solid black;
+}
+.table1 img{
+   width: 30px;
+}
