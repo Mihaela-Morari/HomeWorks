@@ -1,0 +1,33 @@
+в Nano я написала:
+
+#!/bin/bash
+        for i in {1..10}
+        do
+        filename="${i}_$(date '+%d_%m_%y')"
+        touch /opt/180923_evening/morari/$filename
+        done
+
+
+в crontab я написала:
+
+*/15 * * * * /opt/180923_evening/morari/taskmorari.sh
+
+мой ls -l:
+
+[ec2-user@ip-172-31-33-20 morari]$ ls -l
+total 12
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 10_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 1_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 2_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 3_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 4_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 5_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 6_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 7_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 8_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Nov 28 21:49 9_28_11_23
+-rw-rw-r-- 1 ec2-user ec2-user   0 Oct 23 19:36 output.log
+-rwxr--r-- 1 ec2-user ec2-user   2 Oct 23 19:37 script.sh
+-rwxr--r-- 1 ec2-user ec2-user 121 Nov 28 21:49 taskmorari.sh
+-rwxr--r-- 1 ec2-user ec2-user 171 Nov 26 00:13 testscript.sh
+
